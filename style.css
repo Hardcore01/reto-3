@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(16, 16, 70);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.card{
+    width: 340px;
+    height: 520px;
+    border-radius: 10px;
+    background-color: rgb(38, 38, 92);
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.imagen, img{
+    border-radius: 10px;
+}
+
+.capa{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.textos{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.textos > h2{
+    margin-top: 15px;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+.textos > h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    font-size: 16px;
+    font-family: tahoma, Helvetica, sans-serif;
+    color: rgb(156, 156, 156);
+}
+
+.svg{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.svg1{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: aqua;
+}
+.svg1 > h3{
+    margin-left:  5px;
+}
+.svg2{
+    display: flex;
+    font-size: 13px;
+    font-family: tahoma, cursive, sans-serif;
+    color: rgb(126, 126, 126);
+}
+.svg2>h3{
+    margin-left: 5px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    border-style: solid none none;
+    border-color: rgb(133, 133, 133);
+    border-width: 1px;
+}
+.perfil >img{
+    align-items: center;
+    border: 1px cornsilk solid;
+    border-radius: 50%;
+    width: 10%;
+}
+.perfil > p{
+    margin-left: 10px;
+    color: rgb(121, 123, 126);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.perfil > p >strong{
+    margin-left: 5px;
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.capa:hover{
+    cursor: pointer;
+    background: rgba(19, 222, 230, 0.6);
+}
+.perfil >p >strong:hover{
+    cursor: pointer;
+    color: aqua;
+}
+.textos>h2:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+@media(max-width:375px){
+    .card{
+        width: 320px;
+        height: 500px;
+    }
+
+}
